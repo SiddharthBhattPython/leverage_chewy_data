@@ -6,7 +6,6 @@
 # importing libraries
 import re
 import pandas as pd
-import json
 
 # importing utils files
 import dog_food_analyzer_dictionaries

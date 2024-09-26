@@ -128,31 +128,33 @@ with ingredient_analyzer:
             
         
 with energy:
-    
-    st.markdown('#### Your Ingredient Panel:')
-    st.markdown(f"*{ing_str}*")
-#     print(ing_str.dtypes())
-    
-    e = ingredients_pre(ing_str)
-    
-    e["Contribution"] = e['KCAL']*100/e["KCAL"].sum()
-    e = e.sort_values(by="Contribution", ascending=False)
-    
-    fig = px.bar(e, 
-             x='Ingredient', 
-             y='Contribution', 
-                 height = 600,
-             text=(e['Contribution'].fillna(0).round(0).astype(int).astype(str) + '%'))  # Handle NaN and add %
-
-    # Update layout to position text above the bars
-    fig.update_traces(textposition='outside')
-   
-
-    # Update layout
-    fig.update_layout(
-        title= f"Contribution of Energy; Total Estimated Energy from the Product: {int(e['KCAL'].sum())} kcal/kg.",
-        xaxis_title='Ingredient',
-        yaxis_title='Contributions')
-
-    # Display the figure in Streamlit
-    st.plotly_chart(fig, use_container_width=True)
+    try:
+            st.markdown('#### Your Ingredient Panel:')
+            st.markdown(f"*{ing_str}*")
+        #     print(ing_str.dtypes())
+            
+            e = ingredients_pre(ing_str)
+            
+            e["Contribution"] = e['KCAL']*100/e["KCAL"].sum()
+            e = e.sort_values(by="Contribution", ascending=False)
+            
+            fig = px.bar(e, 
+                     x='Ingredient', 
+                     y='Contribution', 
+                         height = 600,
+                     text=(e['Contribution'].fillna(0).round(0).astype(int).astype(str) + '%'))  # Handle NaN and add %
+        
+            # Update layout to position text above the bars
+            fig.update_traces(textposition='outside')
+           
+        
+            # Update layout
+            fig.update_layout(
+                title= f"Contribution of Energy; Total Estimated Energy from the Product: {int(e['KCAL'].sum())} kcal/kg.",
+                xaxis_title='Ingredient',
+                yaxis_title='Contributions')
+        
+            # Display the figure in Streamlit
+            st.plotly_chart(fig, use_container_width=True)
+    except:
+            "Enter Ingredients"

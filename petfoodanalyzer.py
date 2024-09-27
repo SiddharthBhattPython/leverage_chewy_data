@@ -58,9 +58,9 @@ with intro:
     """
     <p style='font-size: 18px;'>The Purpose of this App is as follows:</p>
     <ol style='font-size: 18px;'>
-        <li>🔍 <strong>Ingredient Quality Check:</strong> Checks the quality of each ingredient pasted by the user in the panel along with an explanation.</li>
-        <li>⚡ <strong>Major Energy Sources:</strong> Calculates the contribution of energy by each ingredient and classifies them into "High", "Moderate", or "Low" Energy contributors. This allows the user to understand the majority of energy sources in their diet.</li>
-        <li>🌍 <strong>CO2 Emissions:</strong> Calculates the CO2 emission of each ingredient panel and, based on careful assumptions of proportions, provides the total CO2 emission value of the panel on a per 1000 kcal basis.</li>
+        <li>🔍 <strong>Ingredient Quality Check:</strong> Helps you check the quality of each ingredient. You just have to paste an ingredients panel (from platforms like chewy.com) and follow the prompts.</li>
+        <li>⚡ <strong>Major Energy Sources:</strong> Calculates the contribution of energy by each ingredient. It shows a detailed graph of each ingredient and how much of the total energy (kcal) is coming from it.</li>
+        <li>🌍 <strong>CO2 Emissions:</strong> Calculates the CO2 emission of each ingredient panel if consumeed by a typical 20 kg dog. It also shows additional metrics such as gallons of gasoline and miles driven by a vehicle to show equivalencies in environmental impact.</li>
     </ol>
     """, unsafe_allow_html=True
     )

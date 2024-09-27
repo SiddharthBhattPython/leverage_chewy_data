@@ -8,7 +8,6 @@ import re
 from dog_food_analyzer_utils import *
 from dog_food_analyzer_dictionaries import *
 
-from panel_dictionary import panel_rule
 
 import numpy as np
 import pandas as pd

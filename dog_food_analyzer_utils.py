@@ -242,10 +242,10 @@ def ingredients_pre(ing_str: str) -> Dict[str, Union[str, float, int, list]]:
      'Grains': {'Description': '', 'rice': 'Rice', 'rice starch': 'Rice Starch'}
     '''
     try:
-        if ing_str in panel_rule:
-            rule=panel_rule[ing_str]
-        else:
-            rule="NA"
+        # if ing_str in panel_rule:
+        #     rule=panel_rule[ing_str]
+        # else:
+        #     rule="NA"
         
         
         # taking care of flavors

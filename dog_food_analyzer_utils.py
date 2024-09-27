@@ -12,8 +12,6 @@ import math
 import dog_food_analyzer_dictionaries
 from dog_food_analyzer_dictionaries import *
 
-import panel_dictionary
-
 
 from typing import Dict, Union
 

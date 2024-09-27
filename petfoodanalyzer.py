@@ -198,7 +198,7 @@ with emissions:
             st.metric(label="Per Year 🌎", value=f"{co2 * 365} kg CO2 eq.")
             st.markdown('</div>', unsafe_allow_html=True)
         st.markdown("---")  # Divider for better separation
-        st.markdown("### Equivalent To?")
+        # st.markdown("### Equivalent To?")
         
         # Gallons of gasoline consumed calculation
         gallons_of_gasoline = co2_per_year / (8887 * 0.001)  # Convert grams to metric tons

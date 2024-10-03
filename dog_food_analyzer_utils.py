@@ -12,7 +12,7 @@ import math
 import dog_food_analyzer_dictionaries
 from dog_food_analyzer_dictionaries import *
 
-import panel_dictionary
+# import panel_dictionary
 # from panel_dictionary import panel_rule
 
 from typing import Dict, Union
